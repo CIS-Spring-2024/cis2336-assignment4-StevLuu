@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Homepage</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <div class="logo">
+    <div class="left">
+      <a href="index.html">
+        <img src="https://api.dineoncampus.com/files/test/path/c2c76395-6c18-4086-8133-3390f25d0e3c.png">
+      </a>
+    </div>
+    <div class="buttons">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+    <!-- TODO: make modal work    
+-->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+          <button type="submit">Login</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="newPassword">Password:</label>
+          <input type="password" id="newPassword" required>
+          <button type="submit">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+  <header>
+    <h1>We Cook for Cougars!</h1>
+    <nav class="navbar">
+      <ul class="no-bullets">
+        <li class="topnav"><a href="index.html">Home</a></li>
+        <li class="topnav"><a href="menu.html">Menu</a></li>
+        <li class="topnav"><a href="subtotal.html">Subtotal</a></li>
+        <li class="topnav"><a href="support.html" class="active">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Our Mission</h2>
+    <p>Our goal is to provide good food to students that have enough worries on their plate.</p>
+    <p>With studies and extracurricular activties taking up a majority of students' time and energy</p>
+    <p>we wanted to become a resource for healthy, delicious food without the hassle!</p>
+  </section>
+  <section class="hero">
+    <h2>Meet the Staff</h2>
+    <section class="team-section">
+      <div class="team-member">
+        <img src="/Frontend/Image/blank-pfp.jpeg" alt="The cook">
+        <p class="quote">"I want to provide the best food I can make"</p>
+      </div>
+      <div class="team-member">
+        <img src="/Frontend/Image/stev-pfp.png" alt="Steven">
+        <p class="quote">"My name is Steven"</p>
+      </div>
+      <!-- Add more team members as needed -->
+    </section>
+  </section>
+  <section class="hero">
+    <h2>Questions or Concerns?</h2>
+    <p>Voice your concern:</p>
+    <p>SLCafeteria@uh.edu</p>
+    <p>Call or text us! 1-234-567-8900</p>
+  </section>
+
+  <footer>
+    <p>Have a concern or need help? <a href="support.html">Contact Us!</a></p>
+  </footer>
+  <script src="/Frontend/script.js"></script>
+</body>
+
+</html>

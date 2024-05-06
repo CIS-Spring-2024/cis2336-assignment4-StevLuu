@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Homepage</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <div class="logo">
+    <div class="left">
+      <a href="index.html">
+        <img src="https://api.dineoncampus.com/files/test/path/c2c76395-6c18-4086-8133-3390f25d0e3c.png">
+      </a>
+    </div>
+    <div class="buttons">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+    <!-- TODO: make modal work-->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+          <button type="submit">Login</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="newPassword">Password:</label>
+          <input type="password" id="newPassword" required>
+          <button type="submit">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+  <header>
+    <h1>What's on the plate?</h1>
+    <nav class="navbar">
+      <ul class="no-bullets">
+        <li class="topnav"><a href="index.html">Home</a></li>
+        <li class="topnav"><a href="menu.html" class="active">Menu</a></li>
+        <li class="topnav"><a href="subtotal.html">Subtotal</a></li>
+        <li class="topnav"><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Hungry?</h2>
+    <div id="carouselContainer" class="carousel-container">
+      <h3>Check out our new arrivals!</h3>
+      <button id="cycleButton" class="carousel-button">Next</button>
+      <div id="carouselSlides" class="carousel-slides">
+        <div class="carousel-item">
+          <img src="/Frontend/Image/menuItems/bowl.webp" class="carousel-image" alt="Burger">
+          <p class="carousel-description">Taster Bowl</p>
+        </div>
+        <div class="carousel-item">
+          <img src="/Frontend/Image/menuItems/burger.png" class="carousel-image" alt="Pizza">
+          <p class="carousel-description">Classic Cheeseburger</p>
+        </div>
+        <div class="carousel-item">
+          <img src="/Frontend/Image/menuItems/salad.png" class="carousel-image" alt="Salad">
+          <p class="carousel-description">Fresh Chicken and Salad</p>
+        </div>
+      </div>
+    </div>
+    <section class="menu-list">
+      </div>
+      <h2>Current Menu</h2>
+      </div>
+      <ul class="hours-list">
+        <li class="menu-item">
+          Classic Cheeseburger: <span class="menu-description">- A juicy beef patty topped with
+            cheddar cheese, lettuce, tomato, and onion on a toasted bun. $12.00</span>
+        </li>
+        <li class="menu-item">Margherita Pizza: <span class="menu-description"> - Fresh basil, mozzarella cheese, and
+            tomato sauce on a thin crust. Price: $14.00</span></li>
+        <li class="menu-item">Caesar Salad: <span class="menu-description">- Crisp romaine lettuce tossed with Caesar
+            dressing, parmesan cheese, and croutons. Price: $10.00</span></li>
+        <li class="menu-item">Grilled Salmon: <span class="menu-description">- Herb-marinated salmon fillet, grilled to
+            perfection, served with steamed vegetables and rice. Price: $18.00</span></li>
+        <li class="menu-item">Spaghetti Carbonara: <span class="menu-description">- Spaghetti tossed in a creamy sauce
+            with pancetta, egg, and a sprinkle of parmesan. Price: $15.00</span></li>
+        <li class="menu-item">Chicken Tikka Masala: <span class="menu-description"> Tender chicken pieces cooked in a
+            creamy, spiced tomato sauce, served with basmati rice. Price: $16.00</span></li>
+        <li class="menu-item">Vegetable Stir Fry: <span class="menu-description">- A mix of seasonal vegetables
+            stir-fried with a soy-sesame sauce. Served with or without tofu. Price: $13.00</span></li>
+        <li class="menu-item">Chocolate Lava Cake:<span class="menu-description">- Warm chocolate cake with a gooey
+            chocolate center, served with vanilla ice cream. Price: $8.00</span></li>
+
+        <button class="order-btn carousel-button">Order</button>
+
+        <div id="orderModal" class="modal">
+          <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2>ORDER</h2>
+            <form id="OrderForm">
+              <ul class="menu-list no-bullets">
+                <li class="menu-item" data-price="12">
+                  Classic Cheeseburger - $12.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="14">
+                  Margherita Pizza - $14.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="10">
+                  Caesar Salad - $10.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="18">
+                  Grilled Salmon - $18.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="15">
+                  Spaghetti Carbonara - $15.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="16">
+                  Chicken Tikka Masala - $16.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="13">
+                  Vegetable Stir Fry - $13.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="8">
+                  Chocolate Lava Cake - $8.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li>
+                  <div id="subtotal-container">
+                    Subtotal: $<span id="subtotal">0</span>
+                  </div>
+                </li>
+              </ul>
+
+
+              <!--
+              <button type="submit" class="carousel-button" onclick="submitFormy()">Order</button>
+              -->
+              <button type="submit" class="carousel-button">Order</button>
+              
+            </form>
+
+
+      </ul>
+
+    </section>
+
+    <section>
+      <h1>Suggest a menu item here:</h1>
+      <form id="addItemFormModal">
+        <input type="text" id="itemInputModal" required>
+        <button type="submit">Add Item</button>
+      </form>
+      <ul class="no-bullets" id="itemListModal"></ul>
+
+
+    </section>
+    <p>Explore our menu to eat in or dine out!</p>
+    <div></div>
+    <a href="subtotal.html" class="btn">Find Subtotal</a>
+  </section>
+
+  <footer>
+    <p>Have a concern or need help? <a href="support.html">Contact Us!</a></p>
+  </footer>
+
+  <script src="/Frontend/script.js"></script>
+</body>
+
+</html>

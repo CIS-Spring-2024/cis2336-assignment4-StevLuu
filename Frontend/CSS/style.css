@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(34, 13, 13);
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+header {
+    color: #FFF3B1;
+    text-align: center;
+    background-color: #bb0909;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #edcb07;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width:200px; 
+    
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: left;
+}
+
+details {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #bb0909;
+    color: #FFF3B1;
+    text-align: center;
+    padding: 20px;
+  }
+
+hr {
+    margin-top: 30px;
+}
+
+aside {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Link Styles */
+a:hover {
+    color: #333;
+}
+
+.topnav {
+    background-color:red;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.topnav a{
+    float: left;
+    color:#FFF3B1;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 19px
+}
+
+.topnav a:hover{
+    color:#bdb585;
+}
+
+.topnav a.active{
+    color: #FFF3B1;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid black;
+  }
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+  }
+
+.login-btn {
+    background-color: #bb0909;
+    color: #efba31;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.login-btn:hover {
+    background-color: #cd2525;
+}
+
+.register-btn {
+    background-color: #efba31; 
+    
+    color: #bb0909;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 5px;
+}
+  
+.register-btn:hover {
+    background-color: #b58d28; 
+}
+.buttons {
+    margin-left: auto; 
+}
+
+.login-btn,
+.register-btn {
+    margin-left: 10px;
+}
+
+/* Login n register modal Styling */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #close:hover,
+  #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Form Styling */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.hero {
+    background-image: url('');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bb0909;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #da0b0b;
+}
+
+p {
+    color: white;
+}
+
+
+/*Support page*/
+
+.team-section {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 200px; 
+    border-radius: 50%;
+  }
+  
+  .quote {
+    font-style: italic;
+    margin-top: 10px; 
+  }
+
+  /*Home page*/
+  .operating-hours {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hours-list {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+  }
+  
+  .day {
+    margin-bottom: 10px;
+  }
+  
+  .hours {
+    font-weight: bold;
+  }
+  
+  
+  .menu-events-list {
+    display: flex;
+    list-style: none;
+  }
+
+  /*Menu page*/
+
+  /* add item form */
+#addItemFormModal {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #itemInputModal {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #itemInputModal:focus {
+    outline: none;
+    border-color: #2600ff;
+  }
+  
+  #addItemFormModal button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #bd1111;
+    color: #edcb07;
+    cursor: pointer;
+  }
+  
+  #addItemFormModal button:hover {
+    background-color: #790000;
+    color: #f5df61;
+  }
+  
+  #itemListModal {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #itemListModal li {
+    margin-bottom: 5px;
+  }
+  
+
+  /*carousel stylin*/
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #bd1111; /* Solid, dark grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Space inside the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slides {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.carousel-button {
+    background-color: #bb0909;
+    color: #efba31;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; 
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.carousel-button:hover {
+    background-color: #940808; 
+}
+
+/* menu items */
+.menu-list {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f9f9f9; 
+  padding: 20px; 
+  border-radius: 8px; /* Rounds the corners */
+}
+
+.menu-list h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif; 
+  margin-bottom: 16px; 
+}
+
+.hours-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+}
+
+.menu-item {
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  border-bottom: 1px solid #ddd; 
+  padding: 12px 0;
+}
+
+.menu-description {
+  display: block;
+  color: #666; 
+  font-size: 0.95em;
+  margin-top: 2px; 
+}
+
+/* Order Modal */
+#OrderForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-list {
+  width: 100%;
+}
+
+.menu-item {
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+.quantity-input {
+  display: block;
+  margin: 5px auto; /* Centers the input field under the item description */
+}
+
+#subtotal-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  text-align: center; /* Centers the subtotal */
+}

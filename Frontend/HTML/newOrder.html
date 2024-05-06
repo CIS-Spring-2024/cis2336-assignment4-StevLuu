@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Subtotal</title>
+</head>
+<body>
+    <h1>Subtotal:</h1>
+    <p id="displaySubtotal">Loading subtotal...</p>
+    <button onclick="getSubtotal()">Load Subtotal</button>
+
+    <script>
+        function getSubtotal() {
+            fetch('http://localhost:8080/subtotal')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('displaySubtotal').textContent = data.subtotal;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

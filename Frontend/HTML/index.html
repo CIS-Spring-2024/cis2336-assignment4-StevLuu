@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Homepage</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <div class="logo">
+    <div class="left">
+      <a href="index.html">
+        <img src="https://api.dineoncampus.com/files/test/path/c2c76395-6c18-4086-8133-3390f25d0e3c.png">
+      </a>
+    </div>
+    <div class="buttons">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+    <!-- TODO: make modal work    
+-->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+          <button type="submit">Login</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="newPassword">Password:</label>
+          <input type="password" id="newPassword" required>
+          <button type="submit">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to The Academic Appetite!</h1>
+    <nav class="navbar">
+      <ul class="no-bullets">
+        <li class="topnav"><a href="index.html" class="active">Home</a></li>
+        <li class="topnav"><a href="menu.html">Menu</a></li>
+        <li class="topnav"><a href="subtotal.html">Subtotal</a></li>
+        <li class="topnav"><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="operating-hours">
+    <h2>Operating Hours</h2>
+    <ul class="hours-list">
+      <li class="day">Monday: <span class="hours">9:00 AM - 9:00 PM</span></li>
+      <li class="day">Tuesday: <span class="hours">9:00 AM - 9:00 PM</span></li>
+      <li class="day">Wednesday: <span class="hours">9:00 AM - 9:00 PM</span></li>
+      <li class="day">Thursday: <span class="hours">9:00 AM - 9:00 PM</span></li>
+      <li class="day">Friday: <span class="hours">9:00 AM - 9:00 PM</span></li>
+      <li class="day">Saturday: <span class="hours">10:00 AM - 10:00 PM</span></li>
+      <li class="day">Sunday: <span class="hours">9:00 AM - 10:00 PM</span></li>
+    </ul>
+  </section>
+  <section class="operating-hours">
+    <h2>Lunch Special Hours</h2>
+    <ul class="hours-list">
+      <li class="day">Monday: <span class="hours">12:00 pm - 3:00 PM</span></li>
+      <li class="day">Tuesday: <span class="hours">12:00 pm - 3:00 PM</span></li>
+      <li class="day">Wednesday: <span class="hours">12:00 pm - 3:00 PM</span></li>
+      <li class="day">Thursday: <span class="hours">12:00 pm - 3:00 PM</span></li>
+      <li class="day">Friday: <span class="hours">12:00 pm - 3:00 PM</span></li>
+      <li class="day">Saturday: <span class="hours">all-day</span></li>
+      <li class="day">Sunday: <span class="hours">all-day</span></li>
+    </ul>
+  </section>
+  <section class="hero">
+    <ul class="hours-updates no-bullets">
+      <li>
+        <h2>Closed for spring break</h2>
+      </li>
+      <li>
+        <p>Explore our menu!</p>
+      </li>
+      <li><a href="menu.html" class="btn">View Menu</a></li>
+      <li>
+        <section class="event-promo">
+          <p>Check out what special event is going on!</p>
+          <a href="menu.html" class="btn">Ongoing Events</a>
+        </section>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Have a concern or need help? <a href="support.html">Contact Us!</a></p>
+  </footer>
+  <script src="/Frontend/script.js"></script>
+</body>
+
+</html>
